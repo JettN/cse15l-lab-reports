@@ -24,11 +24,11 @@ Hello World!
 2) two
 3. three
 
-' Fancy Inline code thing '
+`Fancy Inline code thing`
 
-... 
+``` 
 cool 
 code
 block
 feature
-... 
+``` 
