@@ -10,7 +10,7 @@ Hello World!
 
 [This should be a link to testing file](https://jettn.github.io/cse15l-lab-reports/testing.html)
 
-![Doggo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fminiweeniedogs.com%2F&psig=AOvVaw2Cxt-Xwkgc4H65wDMgg_An&ust=1673561380533000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOilhqbEwPwCFQAAAAAdAAAAABAD)
+![Doggo](https://i.pinimg.com/originals/4e/3a/ff/4e3affbc894c7e1f724c524948024a5e.jpg)
 
 > Blockquote thing
 
