@@ -27,7 +27,7 @@ Hello World!
 'Fancy Inline code thing'
 
 ...
-cool 
+# cool 
 code
 block
 feature
