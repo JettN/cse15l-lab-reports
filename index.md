@@ -14,9 +14,9 @@ Hello World!
 
 > Blockquote thing
 
-*Bullet list
-*This too
-*As well as this
+* Bullet list
+* This too
+* As well as this
 
 ---
 
