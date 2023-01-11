@@ -4,7 +4,7 @@ Hello World!
 
 **and this should be bolded**
 
-#This should look like a heading
+# This should look like a heading
 
 ## This is a smaller/thinner heading
 
