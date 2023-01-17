@@ -1,7 +1,7 @@
 # Lab Report 1
 ## Installing VScode
 To log into a course-specific account on ieng6, you need to install Visual Studio Code, or VScode, on your computer; however, I already had VScode installed on my personal device so I did not need to do this. Once installed and opened, you should be able to see a screen like this.
-![Starting VScode screen.png](https://github.com/JettN/cse15l-lab-reports/blob/53af52990a01a99e12bbd14db0d110bf00344eec/Starting%20VScode%20screen.png)
+![Image](https://github.com/JettN/cse15l-lab-reports/blob/53af52990a01a99e12bbd14db0d110bf00344eec/Starting%20VScode%20screen.png)
 
 If you are on Windows like I am, you need to install [Git](https://gitforwindows.org/) (*make sure to select VScode as Git’s default editor when installing Git*) and follow [this post](https://stackoverflow.com/a/50527994) to use git bash in VScode.
 ![Choosing VScode in Git.png](https://github.com/JettN/cse15l-lab-reports/blob/53af52990a01a99e12bbd14db0d110bf00344eec/Choosing%20VScode%20in%20Git.png)
