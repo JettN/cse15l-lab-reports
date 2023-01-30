@@ -1,6 +1,7 @@
-#Lab 2
+# Lab 2
 
-##Part 1: Webserver
+## Part 1: Webserver
+
 My `StringServer` code:
 
 ...
