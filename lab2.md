@@ -42,4 +42,4 @@ class StringServer {
 }
 ```
 
-**Using /add-message**
+**Using `/add-message`**
