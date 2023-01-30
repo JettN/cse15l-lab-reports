@@ -5,7 +5,6 @@
 My `StringServer` code:
 
 ```
-
 import java.io.IOException;
 import java.net.URI;
 
@@ -16,8 +15,14 @@ class Handler implements URLHandler {
         if (url.getPath().contains("/add-message")) {
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s")) {
-                message = message + "\n" + parameters[1];
-                return String.format(message);
+                if(message.equals("")){
+                    message = parameters[1];
+                    return String.format(message);
+                }
+                else{
+                    message = message + "\n" + parameters[1];
+                    return String.format(message);
+                }
             }
         }
         return "404 Not Found!";
@@ -35,5 +40,6 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-
 ```
+
+**Using /add-message**
