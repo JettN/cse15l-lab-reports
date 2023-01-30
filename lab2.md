@@ -4,7 +4,7 @@
 
 My `StringServer` code:
 
-...
+```
 
 import java.io.IOException;
 import java.net.URI;
@@ -36,4 +36,4 @@ class StringServer {
     }
 }
 
-...
+```
