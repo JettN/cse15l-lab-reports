@@ -43,6 +43,7 @@ class StringServer {
 ```
 
 **Using `/add-message`**
+
 ![First message](local server 1st message.JPG](https://github.com/JettN/cse15l-lab-reports/blob/dc13296afc9b77d3b8c77a8a3489310128910eb6/local%20server%201st%20message.JPG) 
 
 When using `/add-massage`, the method `handleRequest(URI url)` is called. It handles a `URI` argument labeled `url`. The method `handleRequest(URI url)` is within the class `Handler` which implements `URLHandler`. In the `Handler` class, a String field called `message` exists which equals `""`, or an empty string. After using `/add-massage?s=How are you doing?`, `message` is updated to equal `"How are you doing?"`.
