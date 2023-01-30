@@ -20,6 +20,6 @@ replacing zz with the letters in your account, into your terminal. You may recei
 
 ---
 ## Trying out Some Commands
-After you have logged in, you can now test some commands such as cd, ls, pwd, mkdir, and cp to familiarize yourself with them. Feel free to type `help _____` in the terminal, filling in the blank with the command you want to know about, to see how to use different commands.
+After you have logged in, you can now test some commands such as 'cd'(which changes the directory that you are in), 'ls'(which prints out the contents of a directory), 'pwd'(which prints the working directoy(the directory you are in currently)), 'mkdir'(which creates a new directory in your current directory), and 'cp'(which allows you to copy files) to familiarize yourself with them. Feel free to type `help _____` in the terminal, filling in the blank with the command you want to know about, to see how to use different commands.
 
 ![Image](TestingCodes.jpg)
