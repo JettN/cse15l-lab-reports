@@ -27,4 +27,5 @@ ls
 ```
 which will take you to your home directory and then print the contents of your home directory. From there, you can use `cd <directory>`, with `<directory>` being the directory you wish to move to, to move to any direcotry in your computer.
 The image below contains some examples of using commands in the terminal.
+
 ![Image](TestingCodes.jpg)
