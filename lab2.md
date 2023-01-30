@@ -60,7 +60,7 @@ Fine. And you?
 
 **Failure Inducing Input**
 
-Method (provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3):
+Method (provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3)):
 
 ```
   static void reverseInPlace(int[] arr) {
@@ -80,7 +80,7 @@ The test below was a failure inducing input for the method above.
     assertArrayEquals(new int[]{4 , 3, 2, 1}, input);
   }
   ```
-The  test below did not induce a failure in the method at the top of this section (this test was provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3):
+The  test below did not induce a failure in the method at the top of this section (this test was provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3)):
 
 ```
 Test 
