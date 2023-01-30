@@ -10,7 +10,7 @@ If you are on Windows like I am, you need to install [Git](https://gitforwindows
 
 ---
 ## Remotely Connecting
-After selecting Git Bash as your default profile for your terminal on VScode, open the terminal(by pressing ctrl + \`) and type 
+After selecting Git Bash as your default profile for your terminal on VScode, open the terminal(by pressing ctrl + \` ) and type 
 ```
 ssh cs15lwi23zz@ieng6.ucsd.edu 
 ```
