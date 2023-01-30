@@ -54,5 +54,6 @@ When using `/add-message` again, the method `handleRequest(URI url)` is called. 
 
 ```
 How are you doing?
-Fine. ANd you?
+Fine. And you?
 ```
+## Part 2: Bugs
