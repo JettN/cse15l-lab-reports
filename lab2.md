@@ -92,7 +92,7 @@ assertArrayEquals(new int[]{ 3 }, input1);
 ```
 The image below contains the output of running the two tests above. The symptom of the bug is that the second half of the array is not reversed.
 
-![JUnit Tests](https://github.com/JettN/cse15l-lab-reports/blob/cd4d2e226272905f2d46c899296b8d24abae9f43/JUnittests.JPG)
+![JUnit Tests](JUnittests.JPG)
 
 The method below(provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3)) contains the bug:
 
