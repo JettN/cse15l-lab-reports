@@ -70,7 +70,7 @@ Method (provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3)):
   }
 ```
   
-The test below was a failure inducing input for the method above.
+The test below contained a failure inducing input for the method above. The failure inducing input was an int array containg four ints: `{1, 2, 3, 4}`.
 
 ```
   @Test
@@ -80,7 +80,7 @@ The test below was a failure inducing input for the method above.
     assertArrayEquals(new int[]{4 , 3, 2, 1}, input);
   }
   ```
-The  test below did not induce a failure in the method at the top of this section (this test was provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3)):
+The  test below did not induce a failure in the method at the top of this section (this test was provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3)). The input was an int array containing one int: `{3}`.
 
 ```
 Test 
@@ -90,3 +90,7 @@ ArrayExamples.reverseInPlace(input1);
 assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
+The image below contains the output of running the two tests above.
+
+![JUnit Tests](JUnittests.JPG)
+
