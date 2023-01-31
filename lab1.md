@@ -28,4 +28,4 @@ ls
 which will take you to your home directory and then print the contents of your home directory. From there, you can use `cd <directory>`, with `<directory>` being the directory you wish to move to, to move to any direcotry in your computer.
 The image below contains some examples of using commands in the terminal.
 
-![Using commands in terminal](https://github.com/JettN/cse15l-lab-reports/blob/c7bb134f385f2521adce8d48c83449b1b6b1ff87/Using%20commands%20in%20terminal.JPG)
+![Image](Using commands in terminal.JPG)
