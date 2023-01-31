@@ -90,7 +90,29 @@ ArrayExamples.reverseInPlace(input1);
 assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
-The image below contains the output of running the two tests above.
+The image below contains the output of running the two tests above. The symptom of the bug is that the second half of the array is not reversed.
 
 ![JUnit Tests](JUnittests.JPG)
+
+The method below(provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3)) contains the bug:
+
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+
+The method below resolves the bug by introducing a variable to store the data of the int being replaced, so that it is not lost. This allows the int being replaced to be reinserted back into the array. It also halves the end point of the `for` loop to prevent an `IndexOutOfBounds Exception`.
+
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+      int back = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = back;
+    }
+} 
+```
 
