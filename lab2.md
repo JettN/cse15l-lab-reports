@@ -44,11 +44,11 @@ class StringServer {
 
 **Using `/add-message`**
 
-![First message](https://github.com/JettN/cse15l-lab-reports/blob/dc13296afc9b77d3b8c77a8a3489310128910eb6/local%20server%201st%20message.JPG) 
+![First message](https://github.com/JettN/cse15l-lab-reports/blob/dc13296afc9b77d3b8c77a8a3489310128910eb6/local%20server%201st%20message.jpg) 
 
 When using `/add-message` for the first time, the method `handleRequest(URI url)` is called. It handles a `URI` argument labeled `url`. The method `handleRequest(URI url)` is within the class `Handler` which implements `URLHandler`. In the `Handler` class, a String field called `message` exists which equals `""`, or an empty string. After using `/add-massage?s=How are you doing?`, `message` is updated to equal `"How are you doing?"`.
 
-![Second Message](https://github.com/JettN/cse15l-lab-reports/blob/1804356e1e0115a1c841807baada4b2bcd229358/local%20server%202nd%20message.JPG)
+![Second Message](https://github.com/JettN/cse15l-lab-reports/blob/1804356e1e0115a1c841807baada4b2bcd229358/local%20server%202nd%20message.jpg)
 
 When using `/add-message` again, the method `handleRequest(URI url)` is called. It handles a `URI` argument labeled `url`. The method `handleRequest(URI url)` is within the class `Handler` which implements `URLHandler`. In the `Handler` class, a String field called `message` exists which now equals `"How are you doing?"`, as the previous `/add-message` updated the `message` variable. After using `/add-massage?s=Fine. And you?`, `message` is updated to equal `"How are you doing?\nFine. And you?"`. `\n` indicates a new line, meaning that the webpage will show the messages as:
 
@@ -92,7 +92,7 @@ assertArrayEquals(new int[]{ 3 }, input1);
 ```
 The image below contains the output of running the two tests above. The symptom of the bug is that the second half of the array is not reversed.
 
-![JUnit Tests](JUnittests.JPG)
+![JUnit Tests](JUnittests.jpg)
 
 The method below(provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3)) contains the bug:
 
@@ -116,3 +116,6 @@ static void reverseInPlace(int[] arr) {
 } 
 ```
 
+# Part 3
+
+One thing I learned from lab in weeks 2 and 3 is that you can modify a webpage with a Java program. Whenever I would work with a website(ie. Google Sites), I always accessed and modified it through an interface provided by the website. It never occured to me that you could write a Java program that is linked to, interacts with, and modifies a webstie directly.
