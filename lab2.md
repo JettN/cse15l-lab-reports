@@ -44,11 +44,11 @@ class StringServer {
 
 **Using `/add-message`**
 
-![First message](https://github.com/JettN/cse15l-lab-reports/blob/32d06dab435d16bf0ce5f7c45a25ee5eaf8e890c/local%20server%201st%20message.jpg)
+![First message](https://github.com/JettN/cse15l-lab-reports/blob/32d06dab435d16bf0ce5f7c45a25ee5eaf8e890c/local%20server%201st%20message.JPG)
 
 When using `/add-message` for the first time, the method `handleRequest(URI url)` is called. It handles a `URI` argument labeled `url`. The method `handleRequest(URI url)` is within the class `Handler` which implements `URLHandler`. In the `Handler` class, a String field called `message` exists which equals `""`, or an empty string. After using `/add-massage?s=How are you doing?`, `message` is updated to equal `"How are you doing?"`.
 
-![Second Message](https://github.com/JettN/cse15l-lab-reports/blob/cd4d2e226272905f2d46c899296b8d24abae9f43/local%20server%202nd%20message.jpg)
+![Second Message](https://github.com/JettN/cse15l-lab-reports/blob/cd4d2e226272905f2d46c899296b8d24abae9f43/local%20server%202nd%20message.JPG)
 
 When using `/add-message` again, the method `handleRequest(URI url)` is called. It handles a `URI` argument labeled `url`. The method `handleRequest(URI url)` is within the class `Handler` which implements `URLHandler`. In the `Handler` class, a String field called `message` exists which now equals `"How are you doing?"`, as the previous `/add-message` updated the `message` variable. After using `/add-massage?s=Fine. And you?`, `message` is updated to equal `"How are you doing?\nFine. And you?"`. `\n` indicates a new line, meaning that the webpage will show the messages as:
 
@@ -92,7 +92,7 @@ assertArrayEquals(new int[]{ 3 }, input1);
 ```
 The image below contains the output of running the two tests above. The symptom of the bug is that the second half of the array is not reversed.
 
-![JUnit Tests](https://github.com/JettN/cse15l-lab-reports/blob/cd4d2e226272905f2d46c899296b8d24abae9f43/JUnittests.jpg)
+![JUnit Tests](https://github.com/JettN/cse15l-lab-reports/blob/cd4d2e226272905f2d46c899296b8d24abae9f43/JUnittests.JPG)
 
 The method below(provided by [jpolitz](https://github.com/ucsd-cse15l-w23/lab3)) contains the bug:
 
