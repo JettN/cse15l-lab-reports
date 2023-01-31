@@ -44,11 +44,11 @@ class StringServer {
 
 **Using `/add-message`**
 
-![First message](https://github.com/JettN/cse15l-lab-reports/blob/32d06dab435d16bf0ce5f7c45a25ee5eaf8e890c/local%20server%201st%20message.JPG)
+![First message](https://github.com/JettN/cse15l-lab-reports/blob/29449ac2fa047d97e6580a1b4e419c155106facd/local%20server%201st%20message.JPG)
 
 When using `/add-message` for the first time, the method `handleRequest(URI url)` is called. It handles a `URI` argument labeled `url`. The method `handleRequest(URI url)` is within the class `Handler` which implements `URLHandler`. In the `Handler` class, a String field called `message` exists which equals `""`, or an empty string. After using `/add-massage?s=How are you doing?`, `message` is updated to equal `"How are you doing?"`.
 
-![Second Message](https://github.com/JettN/cse15l-lab-reports/blob/cd4d2e226272905f2d46c899296b8d24abae9f43/local%20server%202nd%20message.JPG)
+![Second Message](https://github.com/JettN/cse15l-lab-reports/blob/29449ac2fa047d97e6580a1b4e419c155106facd/local%20server%202nd%20message.JPG)
 
 When using `/add-message` again, the method `handleRequest(URI url)` is called. It handles a `URI` argument labeled `url`. The method `handleRequest(URI url)` is within the class `Handler` which implements `URLHandler`. In the `Handler` class, a String field called `message` exists which now equals `"How are you doing?"`, as the previous `/add-message` updated the `message` variable. After using `/add-massage?s=Fine. And you?`, `message` is updated to equal `"How are you doing?\nFine. And you?"`. `\n` indicates a new line, meaning that the webpage will show the messages as:
 
