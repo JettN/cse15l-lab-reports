@@ -5,11 +5,11 @@
 I decided to choose the `find` command to research. I started by asking ChatGPT for some interesting ways to use the `find` command.
 My first interaction is pictured below.
 
-![First ChapGPT Interaction](https://github.com/JettN/cse15l-lab-reports/blob/b84c9ef92b6c007132f94eef5c088c9d281816e0/ChatGPT_find_Command.JPG)
+![First ChapGPT Interaction](ChatGPT_find_Command.JPG)
 
 I then asked ChapGPT for some more ways to use the `find` command to see what other options there are.
 
-![Second ChatGPT Interaction](https://github.com/JettN/cse15l-lab-reports/blob/b84c9ef92b6c007132f94eef5c088c9d281816e0/ChatGPT_find_Command_2.JPG)
+![Second ChatGPT Interaction](ChatGPT_find_Command_2.JPG)
 
 From the 10 commands-line options for the `find` command that ChatGPT gave me, I chose `-type`, `-exec`, `-mindepth`, and `-empty`.
 I also referenced [this website](https://man7.org/linux/man-pages/man1/find.1.html) to understand the command-line options I chose better.
