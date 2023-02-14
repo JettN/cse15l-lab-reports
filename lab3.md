@@ -34,9 +34,9 @@ written_2/travel_guides/berlitz1
 written_2/travel_guides/berlitz2  
 ```
 
----
-
 In the example above, I used `-type d` with the find command, which found all of the directories and subdirectories in the directory `written_2/`. This is useful when you want to see if a specific directory exists within a directory or its subdirectories.
+
+---
 
 ```
 $ find written_2/non-fiction/OUP/Castro/ -type f
