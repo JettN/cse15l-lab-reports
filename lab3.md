@@ -34,6 +34,8 @@ written_2/travel_guides/berlitz1
 written_2/travel_guides/berlitz2  
 ```
 
+---
+
 In the example above, I used `-type d` with the find command, which found all of the directories and subdirectories in the directory `written_2/`. This is useful when you want to see if a specific directory exists within a directory or its subdirectories.
 
 ```
@@ -82,6 +84,8 @@ In the example above, I used `-exec` with the `wc` command to find the number of
 
 Using `-exec` with the `wc` command is useful if you want to find the wordcount of files in a directory and its subdirectories, but you do not know how many files there are in the directory.
 
+---
+
 ```
 $ find written_2/ -name "*.txt" -exec grep -l "Lucayans" {} \;
 written_2/travel_guides/berlitz2/Bahamas-History.txt
@@ -99,6 +103,8 @@ written_2/non-fiction/OUP/Castro
 ```
 
 In the example above, I used `-mindepth 2` to find directories named "Castro" one level down under the `written_2/` directory. This can be useful if you want to find a directories at a specific level and ignore the directories above that level.
+
+---
 
 ```
 $ find written_2/ -mindepth 4 -name "*.txt"
@@ -161,6 +167,8 @@ $ find written_2/ -empty
 ```
 
 In the example above, I used `-empty` to check if there are any empty files or directories in `written_2/` and its subdirectories. Since it returned nothing, that means that there are no empty file or directories in `written_2/` and its subdirectories. This is useful if a user wants to clean up a driectory by removing empty folders and files.
+
+---
 
 After seeing that there were no empty directories or files in `written_2/`, I created my own empty directories in `written_2/` using the `mkdir` command.
 
