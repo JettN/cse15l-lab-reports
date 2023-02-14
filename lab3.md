@@ -11,7 +11,7 @@ I then asked ChapGPT for some more ways to use the `find` command to see what ot
 
 ![Second ChatGPT Interaction](https://github.com/JettN/cse15l-lab-reports/blob/b84c9ef92b6c007132f94eef5c088c9d281816e0/ChatGPT_find_Command_2.JPG)
 
-From the 10 commands-line options for the `find` command that ChatGPT gave me, I chose `-type`, `-exec`, , and .
+From the 10 commands-line options for the `find` command that ChatGPT gave me, I chose `-type`, `-exec`, `-mindepth`, and `-empty`.
 I also referenced [this website](https://man7.org/linux/man-pages/man1/find.1.html) to understand the command-line options I chose better.
 
 ## `-type`
@@ -87,4 +87,100 @@ $ find written_2/ -name "*.txt" -exec grep -l "Lucayans" {} \;
 written_2/travel_guides/berlitz2/Bahamas-History.txt
 ```
 
-In the example above, I used `-exec` with the `grep -l` command to find the file(s) containing the word "Lucayans". The `grep -l` command prints only the names of files containing matches to the string input, which is "Lucayans" in this case. Using `-exec` with the `grep` command is useful when you want to find files in a directory and its subdirectories containing a specific string.
+In the example above, I used `-exec` with the `grep -l` command to find the file(s) containing the word "Lucayans" in the `written_2/` directory. The `grep -l` command prints only the names of files containing matches to the string input, which is "Lucayans" in this case. Using `-exec` with the `grep` command is useful when you want to find files in a directory and its subdirectories containing a specific string.
+
+## `-mindepth`
+
+The option `-mindepth` specifies the minimum depth for the `find` command to search, with 1 representing the current directory.
+
+```
+$ find written_2/ -mindepth 2 -name Castro
+written_2/non-fiction/OUP/Castro
+```
+
+In the example above, I used `-mindepth 2` to find directories named "Castro" one level down under the `written_2/` directory. This can be useful if you want to find a directories at a specific level and ignore the directories above that level.
+
+```
+$ find written_2/ -mindepth 4 -name "*.txt"
+written_2/non-fiction/OUP/Abernathy/ch1.txt
+written_2/non-fiction/OUP/Abernathy/ch14.txt
+written_2/non-fiction/OUP/Abernathy/ch15.txt
+written_2/non-fiction/OUP/Abernathy/ch2.txt
+written_2/non-fiction/OUP/Abernathy/ch3.txt
+written_2/non-fiction/OUP/Abernathy/ch6.txt
+written_2/non-fiction/OUP/Abernathy/ch7.txt
+written_2/non-fiction/OUP/Abernathy/ch8.txt
+written_2/non-fiction/OUP/Abernathy/ch9.txt
+written_2/non-fiction/OUP/Berk/ch1.txt
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Berk/ch7.txt
+written_2/non-fiction/OUP/Castro/chA.txt
+written_2/non-fiction/OUP/Castro/chB.txt
+written_2/non-fiction/OUP/Castro/chC.txt
+written_2/non-fiction/OUP/Castro/chL.txt
+written_2/non-fiction/OUP/Castro/chM.txt
+written_2/non-fiction/OUP/Castro/chN.txt
+written_2/non-fiction/OUP/Castro/chO.txt
+written_2/non-fiction/OUP/Castro/chP.txt
+written_2/non-fiction/OUP/Castro/chQ.txt
+written_2/non-fiction/OUP/Castro/chR.txt
+written_2/non-fiction/OUP/Castro/chV.txt
+written_2/non-fiction/OUP/Castro/chW.txt
+written_2/non-fiction/OUP/Castro/chY.txt
+written_2/non-fiction/OUP/Castro/chZ.txt
+written_2/non-fiction/OUP/Fletcher/ch1.txt
+written_2/non-fiction/OUP/Fletcher/ch10.txt
+written_2/non-fiction/OUP/Fletcher/ch2.txt
+written_2/non-fiction/OUP/Fletcher/ch5.txt
+written_2/non-fiction/OUP/Fletcher/ch6.txt
+written_2/non-fiction/OUP/Fletcher/ch9.txt
+written_2/non-fiction/OUP/Kauffman/ch1.txt
+written_2/non-fiction/OUP/Kauffman/ch10.txt
+written_2/non-fiction/OUP/Kauffman/ch3.txt
+written_2/non-fiction/OUP/Kauffman/ch4.txt
+written_2/non-fiction/OUP/Kauffman/ch5.txt
+written_2/non-fiction/OUP/Kauffman/ch6.txt
+written_2/non-fiction/OUP/Kauffman/ch7.txt
+written_2/non-fiction/OUP/Kauffman/ch8.txt
+written_2/non-fiction/OUP/Kauffman/ch9.txt
+written_2/non-fiction/OUP/Rybczynski/ch1.txt
+written_2/non-fiction/OUP/Rybczynski/ch2.txt
+written_2/non-fiction/OUP/Rybczynski/ch3.txt
+```
+
+In the example above, I used `-mindepth 4` to find `.txt` files three levels down under the `written_2/` directory. This can be useful if you want to find `.txt` files at a specific level and ignore the `.txt` files above that level.
+
+## `-empty`
+
+The option `-empty` finds all empty files and directories in the current directory andits subdirectories.
+
+```
+$ find written_2/ -empty
+
+```
+
+In the example above, I used `-empty` to check if there are any empty files or directories in `written_2/` and its subdirectories. Since it returned nothing, that means that there are no empty file or directories in `written_2/` and its subdirectories. This is useful if a user wants to clean up a driectory by removing empty folders and files.
+
+After seeing that there were no empty directories or files in `written_2/`, I created my own empty directories in `written_2/` using the `mkdir` command.
+
+```
+$ cd written_2/
+
+$ mkdir emptyDir
+
+$ mkdir emptyDir2
+
+$ cd ..
+
+```
+
+After returning to the directory above `written_2/`, I used `-empty` to see if the empty directories would be found.
+
+```
+$ find written_2/ -empty
+written_2/emptyDir
+written_2/emptyDir2
+```
+
+In the example above, `-empty` with the `find` command now returns the two empty directories that I created. However, no empty directories or files were returned from `written_2/`'s subdirectories since I did not create any empty directory in those subdirectories. Again, this is useful if a user wants to clean up a driectory by removing empty folders and files.
