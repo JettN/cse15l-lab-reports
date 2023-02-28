@@ -5,7 +5,7 @@ Keys Pressed: `<Ctrl-R>` `s` `<enter>`
 
 I used `<Ctrl-R>` to search my command history. By pressing `s` while searching my command history, bash autocompletes `s` to `ssh cs15lwi23amn@ieng6.ucsd.edu` (a command which will log me into ieng6) and I just have to press `<enter>` to get bash to run that command.
 
-![Task_4](Task 4.PNG)
+![Task_4](Task_4.PNG)
 
 ## 5. Clone your fork of the repository from your Github account
 
