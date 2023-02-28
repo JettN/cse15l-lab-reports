@@ -11,7 +11,7 @@ I used `<Ctrl-R>` to search my command history. By pressing `s` while searching 
 
 Keys Pressed: `git clone` `<space>` `<Ctrl-V>` `<enter>`
 
-I typed `git clone` as `git clone` is the command used to clone a repository. Then I pressed `<space>` to create a space after `git clone` and pressed `<Ctrl-V>` to paste the SSH url which I had copied to my clipboard. Then I pressed `<enter>` to run the full command `git clone git@github.com:JettN/lab7.git`.
+I typed `git clone` as `git clone` is the command used to clone a repository. Then I pressed `<space>` to create a space after `git clone` and pressed `<Ctrl-V>` to paste the SSH url which I already had copied to my clipboard. Then I pressed `<enter>` to run the full command `git clone git@github.com:JettN/lab7.git`.
 
 ![Task5_Git_Clone](Task5_Git_Clone.PNG)
 
