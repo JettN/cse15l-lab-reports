@@ -19,7 +19,7 @@ I typed `git clone` as `git clone` is the command used to clone a repository. Th
 
 Keys Pressed: `cd l` `<tab>` `<enter>` `<Ctrl-R>` `ja` `<enter>` `<Ctrl-R>` `java` `<space>` `<enter>`
 
-After cloning my fork of the repository from my GitHub account, I typed `cd l` into my terminal then pressed tab to autocomplete that line to `cd lab7/` and pressed enter to execute that command. Then I used `<Ctrl-R>` and typed `ja` which brought up `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I then pressed `<enter>` to run that command. Once the command ran, I used `<Ctrl-R>` and typed `java` then pressed `<space>` which brought up `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. I then pressed `<enter>` to run that command which provided the response below.
+After cloning my fork of the repository from my GitHub account, I typed `cd l` into my terminal then pressed `<tab>` to autocomplete that line to `cd lab7/` and pressed `<enter>` to execute that command. Then I used `<Ctrl-R>` and typed `ja` which brought up `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I then pressed `<enter>` to run that command. Once the command ran, I used `<Ctrl-R>` and typed `java` then pressed `<space>` which brought up `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. I then pressed `<enter>` to run that command which provided the response below.
 
 ![Task6](Task6.JPG)
 
