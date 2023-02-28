@@ -11,7 +11,7 @@ I used `<Ctrl-R>` to search my command history. By pressing `s` while searching 
 
 Keys Pressed: `git clone` `<space>` `<Ctrl-V>` `<enter>`
 
-I typed `git clone` as `git clone` is the command used to clone a repository. Then I pressed `<space>` to create a space after `git clone` and pressed `<Ctrl-V>` to paste the SSH url. Then I pressed `<enter>` to run the full command `git clone git@github.com:JettN/lab7.git`.
+I typed `git clone` as `git clone` is the command used to clone a repository. Then I pressed `<space>` to create a space after `git clone` and pressed `<Ctrl-V>` to paste the SSH url which I had copied to my clipboard. Then I pressed `<enter>` to run the full command `git clone git@github.com:JettN/lab7.git`.
 
 ![Task5_Git_Clone](Task5_Git_Clone.PNG)
 
@@ -35,9 +35,9 @@ The image below shows the fixed file with my cursor next to the location I made 
 
 ## 8. Run the tests, demonstrating that they now succeed
 
-Keys Pressed: `<Ctrl-R>` `javac` `<enter>` `<Ctrl-R>` `java ` `<enter>`
+Keys Pressed: `<Ctrl-R>` `javac` `<enter>` `<Ctrl-R>` `java` `<space>` `<enter>`
 
-I used `<Ctrl-R>` and typed `ja` which brought up `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I then pressed `<enter>` to run that command. Once the command ran, I used `<Ctrl-R>` and typed `java` then pressed `<space>` which brought up `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. I then pressed `<enter>` to run that command which provided the response below.
+I used `<Ctrl-R>` and typed `javac` which brought up `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I then pressed `<enter>` to run that command. Once the command ran, I used `<Ctrl-R>` and typed `java` then pressed `<space>` which brought up `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. I then pressed `<enter>` to run that command which provided the response below.
 
 ![Task8](Task8.JPG)
 
