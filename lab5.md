@@ -190,6 +190,8 @@ In the example above, I used the `-w` option to search for files in the `written
 This option is very useful if you are looking for lines or files (using the `-l`) containing specific words. 
 In this case, the `-w` option was able to shorten the list of 78 files `grep` gave me down to 3 after specifying that I was only looking for the word "cat", rather than a substring containing "cat".
 
+---
+
 ```
 $ grep cat written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt 
 Another majestic view of the city is from a charming park, Miradouro de Santa Luzia, just down the hill from the castle. 
@@ -202,7 +204,7 @@ The National Theater is located here, and across the road is the Estação do Ro
 which looks something like a Moorish palace with horseshoe arches, just west of the square. 
 Two blocks north is another lively square, Praça dos Restauradores, with its historic obelisk commemorating the overthrow of Spanish Hapsburg rule in 1640. The main tourist office is located here at Palácio Foz, on the west side of the square.
 ```
-*(There was more lines of text produced by the `grep` command above that I did not include due to redundancy and space)*
+*(There were more lines of text produced by the `grep` command above that I did not include due to redundancy and space)*
 
 ```
 $ grep -w "cat" written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
@@ -213,3 +215,41 @@ Museu Regional de Lagos. Rooms display sacred art, archaeological remains, the o
 like a science experiment gone bad: an eight-legged goat kid preserved in formaldehyde, a one-eyed sheep, a cat with two faces.
 ```
 
+In the example above, I used the `-w` option to search `Portugal-WhereToGo.txt` for the word "cat".
+This option is useful as it filters the many lines of text grep would have given me if I did not use the `-w` option, to just the one containg the word "cat", and not those containing the substring "cat".
+
+## `-e`
+
+The `-e` option with grep allows users to specify multiple patterns to search for.
+
+```
+$ grep -l -r -w -e "dog" -e "cat" written_2/non-fiction/
+written_2/non-fiction/OUP/Abernathy/ch9.txt
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Castro/chB.txt
+written_2/non-fiction/OUP/Kauffman/ch5.txt
+written_2/non-fiction/OUP/Rybczynski/ch1.txt
+```
+
+In the example above, I used `-l` to return only the file name containing the patterns I am searching for, `-r` to search through the files and subdirectories of `written_2/non-fiction/` recursively, and `-w` to search for a specific word, rather than a substring. The `-e` option in this case is used to specify that I am searching for the words "dog" or "cat" in text files. This can be useful if you are searching for multiple patterns withing a directory of text files.
+
+---
+
+```
+$ grep -l -r -w -e "chicken" -e "steak" written_2/travel_guides/
+written_2/travel_guides/berlitz1/HandRIsrael.txt
+written_2/travel_guides/berlitz1/HandRJamaica.txt
+written_2/travel_guides/berlitz1/HistoryIndia.txt
+written_2/travel_guides/berlitz1/WhatToIbiza.txt
+written_2/travel_guides/berlitz1/WhatToIstanbul.txt
+written_2/travel_guides/berlitz1/WhatToJamaica.txt
+written_2/travel_guides/berlitz1/WhereToJapan.txt
+written_2/travel_guides/berlitz1/WhereToLosAngeles.txt
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt
+written_2/travel_guides/berlitz2/California-WhereToGo.txt
+written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
+written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
+```
+
+In the example above, I used `grep` to search through the files and subdirectories of `written_2/travel_guides/` for the words "chicken" and "steak". In this example, the `-e` option is useful as it can be used to help a user determine which locations have food that a user would like.
