@@ -202,7 +202,7 @@ The National Theater is located here, and across the road is the Estação do Ro
 which looks something like a Moorish palace with horseshoe arches, just west of the square. 
 Two blocks north is another lively square, Praça dos Restauradores, with its historic obelisk commemorating the overthrow of Spanish Hapsburg rule in 1640. The main tourist office is located here at Palácio Foz, on the west side of the square.
 ```
-(There was more lines text produced by the `grep` command above that I did not include due to redundancy and space)
+*(There was more lines of text produced by the `grep` command above that I did not include due to redundancy and space)*
 
 ```
 $ grep -w "cat" written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
